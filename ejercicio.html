@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>If Statement Example 1</title>
+    <script type="text/javascript">
+        var horas1=+prompt("ingresa las horas1");
+        var min1=+prompt("ingresa las min1");
+        var seg1=+prompt("ingresa las seg1");
+
+
+        var horas2=+prompt("ingresa las horas2");
+        var min2=+prompt("ingresa las min2");
+        var seg2=+prompt("ingresa las seg2");
+        var t1=new Date();
+        var t2=new Date();
+        var t3=new Date();
+        var hora;
+        var min;
+        var seg;
+        t1.setHours(horas1,min1,seg1);
+        t2.setHours(horas2,min2,seg2);
+       if (horas1>horas2) {
+        t2.setHours(horas1-horas2,min1-min2,seg1-seg2);
+      }else{
+            t2.setHours(horas2-horas1,min2-min1,seg2-seg1);
+     }
+        
+
+        alert("han transcurrido "+t2.getHours()+":"+t2.getMinutes()+":"+t2.getSeconds());
+        
+        
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>
